@@ -15,6 +15,7 @@ function App() {
   useEffect(() => {
     (async()=>{
       const result =await getCollection("tasks")
+      console.log(result);
     })()
     
   }, [])
@@ -31,7 +32,6 @@ function App() {
 
       return isValid;
   }
-
 
   const addTask=(e)=>{
     e.preventDefault()
